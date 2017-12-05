@@ -1,0 +1,183 @@
+#ide1,
+#ide2,
+#ide3,
+.article_sections_divED {
+    border-radius: 0.3em;
+    border: 0.2em solid rgba(214, 90, 89, 0.5);
+    background: rgb(234, 80, 69);
+    margin: 1em 0;
+}
+
+/* */
+
+.credits ul {
+    list-style-type: none;
+    display: flex;
+    flex-basis: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.credits li {
+    overflow: hidden;
+    word-break: break-all;
+    max-width: 16%;
+    min-height: 1.5em;
+    min-width: 180px;
+}
+
+.credits a {
+    font-size: 0.9em;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* !important overskriver tidligere angivelse i styles.css */
+
+.credits img {
+    width: 50%;
+    margin: 1em;
+    border-radius: 50%;
+}
+
+#experience_maps ol {
+    list-style-type: none;
+    display: flex;
+    flex-basis: 400px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#experience_maps li {
+    width: 33%;
+}
+
+article header li div {
+    text-align: center;
+}
+
+#experience_maps li img {
+    width: 100%;
+    border-radius: 0.2em;
+}
+
+#persona p {
+    margin: 0;
+}
+
+#persona section p {
+    margin: 0 0 1em;
+}
+
+#persona section {
+    padding: 0;
+}
+
+#persona section h1 {
+    font-size: 1.1em;
+}
+
+#persona #persona_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#persona #persona_info {
+    margin: 1em;
+}
+
+#persona .personaimg {
+    width: 20vw;
+    height: 20vw;
+    background-size: 100%;
+    margin: 1em 0 1em 0;
+    background-image: url(images/jonathan.jpg);
+}
+
+#persona_info ul {
+    list-style-type: disc;
+    margin: 1em 0 0 2em;
+}
+
+#persona_info b {
+    text-transform: uppercase;
+}
+
+
+#interview ul {
+    list-style-type: disc;
+    margin: 1em 0 0 2em;
+    text-transform: uppercase;
+}
+
+#interview ul li {
+    font-weight: bold;
+}
+
+#interview ul li li {
+    font-weight: normal;
+    text-transform: none;
+}
+
+#interview ul ul {
+    list-style-type: circle;
+    margin: 0.5em 0 1em 1em;
+}
+
+
+
+#ide_grundlag ul {
+    list-style-type: disc;
+    margin: 1em 0 0 2em;
+}
+
+#idegrundlag ul li {
+    list-style-type: circle;
+
+}
+
+#ide_grundlag ul li li {
+    list-style-type: circle;
+
+}
+
+#ide_grundlag ul li ul {
+    margin: 0.5em 0 1em 1em;
+}
+
+#ide_grundlag,
+#kantinen_video {
+    padding: 0;
+}
+
+#koncept_praktik ol {
+    margin: 1em 0 1em 2em;
+    list-style-type: decimal;
+}
+
+.table_wrap {
+    width: 97%;
+    margin: 0 auto;
+    overflow-x: scroll;
+}
+
+table {
+    empty-cells: hide;
+    width: 100%;
+    font-size: 0.8em
+}
+
+table td {
+    border: 1px solid rgb(230, 230, 230);
+    padding: 0.2em;
+}
+
+.indent {
+    text-indent: 3em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+article img {
+    width: 100%;
+}

@@ -1,0 +1,403 @@
+* {
+    /*  Stjerne (*) er en såkaldt wildcard selector, som gør det muligt at
+    ændre på alle links på en gang. Normalt bruger folk den mest som "CSS reset".
+    
+    Dette er nødvendigt fordi der er forskel på margin og padding i browsere.
+    Nogle browsere bruger padding på bestemte elementer, imens andre bruger margin.
+    Vi løser problemet ved at "resette" begge egenskaber på alle elementer.
+*/
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 1920px;
+    position: relative;
+    min-height: 100%;
+    background: rgb(235, 147, 141);
+    font-weight: 300;
+}
+
+ol,
+ul {
+    /* Vi fjerner her default indstillingen for lister, da vi bruger dem til links og credits.
+        Brug "decimal" (ol) og "disc" (ul) senere hvis vi skal have numre- eller punkt liste
+        I.e. For senere at ændre en liste i en bestemt sektion: #section_id { ... } 
+     */
+    list-style-type: none;
+}
+
+#site_header h1 {
+    font-size: 3em;
+}
+
+article h1 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 1em 0 1em 0;
+}
+
+/* *****************************
+******** Article, header, ******
+*********** footer *************
+********************************
+***************************** */
+
+#site_header {
+    background: rgb( 235, 114, 106);
+    padding: 2.5em 0 0.5em 0;
+    color: #fff;
+    text-align: center;
+}
+
+#site_header h1 {
+    font-family: "Helvetica Neue Condensed", Helvetica, Verdana, Arial, sans-serif;
+}
+
+article section header {
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(235, 114, 106);
+    border-radius: 4vw;
+    background-color: rgb(235, 147, 141);
+    margin: 1em 0;
+}
+
+/* border:1px solid rgb(30,30,30);border-radius:0.5em; */
+
+/* Vi har ikke brug for h2-h6 i HTML5 og Living Standard
+   Desuden har de ingen - eller worst case - mikro lille betydning mht SEO.
+   Desværre understøttes <setion> + <h1>'s stadig ikke i browserne - dette har dog meget begrænset betydning.
+   Se evt: https://www.w3.org/wiki/HTML/Usage/Headings/h1only 
+
+*/
+
+section header h1 {
+    font-size: 2.5em;
+    padding: 0.5em;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin: 1em 0;
+    padding: 0.5em 0;
+    width: 100%;
+    background-color: rgb(235, 114, 106);
+    text-align: center;
+    text-transform: uppercase;
+    border-style: solid;
+    border-radius: 1em;
+    border-color: rgb(235, 147, 141);
+}
+
+section h3 {
+    font-size: 1.2em;
+    padding: 1em 0;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 3em 0 0 0;
+}
+
+/* *****************************
+******** Vores lækre burger ****
+********* Værsgo og spis! ******
+********************************
+***************************** */
+
+#burger_menu {
+    font-size: 2em;
+    color: #fff;
+    background-color: rgba(235, 114, 106, 0.2);
+    height: 1.5em;
+    overflow: hidden;
+    text-align: center;
+    top: 0px;
+    width: 5em;
+    margin: 0 auto;
+    border: 0.2em solid rgba(234, 80, 69, 0);
+    box-sizing: border-box;
+    border-bottom-left-radius: 0.2em;
+    border-bottom-right-radius: 0.2em;
+    transition: background 1s ease-in-out 0.2s;
+}
+
+#burger_menu_wrap {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#burger_menu_wrap ol,
+section header ol {
+    display: flex;
+    flex-basis: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#burger_menu li {
+    margin: 0.3em 0.7em;
+    font-size: 0.65em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+section header li {
+    margin: 0 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+section header nav {
+    text-align: center;
+    margin: 0 1em 0;
+    position: relative;
+}
+
+#burger_menu .to_da_top {
+    width: 100%;
+}
+
+#burger_menu a,
+section header nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#burger_menu a:hover {
+    color: rgb(234, 80, 69);
+}
+
+section header nav a:hover {
+    color: rgb(50, 50, 50);
+}
+
+article a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:visited {
+    color: rgb(255, 255, 255);
+}
+
+article a:hover {
+    color: rgb(50, 50, 50);
+}
+
+article a:active {
+    color: rgb(255, 255, 255);
+}
+
+article {
+    color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 10em;
+}
+
+article img {
+    max-width: 100%;
+    min-width: 20%;
+}
+
+footer {
+    background: #202532;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5em;
+}
+
+footer p b {
+    font-size: 1.2em;
+}
+
+section,
+header,
+footer {
+    padding: 1em;
+}
+
+.hr {
+    height: 10px;
+    width: 100%;
+    background: rgb(230, 230, 230);
+    border-radius: 0.2em;
+    margin: 1.5em auto;
+}
+
+
+blockquote {
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+
+blockquote:before {
+    color: #fff;
+    content: open-quote;
+    font-size: 6em;
+    font-family: "georgia";
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+blockquote p {
+    display: inline;
+}
+
+/* Simpel horizontal linje */
+
+/* *****************************
+******** Sektioner i article ***
+********************************
+***************************** */
+
+.link_ud {
+    text-align: center;
+    font-size: 2em;
+}
+
+article video {
+    max-width: 1920px;
+    display: block;
+    margin: 1em auto;
+    width: 100%;
+}
+
+section {
+    margin: 1em 0 0;
+}
+
+/* *****************************
+******** Animationer ***********
+**********Alt muligt spas*******
+***************************** */
+
+.fadein {
+    animation: fadein 2s forwards;
+}
+
+@keyframes fadein {
+    /* Fade-in effekt når man besøger / opdatere siden  (Ikke når man klikker på links!) */
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#burger_menu:hover {
+    animation: menu_open 0.3s linear forwards;
+    cursor: pointer;
+    color: rgb(150, 200, 250);
+}
+
+/* #burger_menu:not( :hover ){animation: menu_close 1s linear forwards; } */
+
+/* Mht. .menu_ animationerne: Det er nok bedst at bruge JavaScript / jQuery,
+   da ":not" formegentlig ikke vil virke i touch enheder... onClick="void(0)" skulle derimod virke. */
+
+.menu_close {
+    animation: menu_close 0.3s linear forwards;
+}
+
+@keyframes menu_open {
+    0% {
+        width: 5em;
+        height: 1.5em;
+        background: rgba(235, 147, 141, 0.1);
+        border: 0.2em solid rgba(234, 80, 69, 0);
+    }
+    50% {
+        background: rgba(235, 147, 141, 0.9);
+        width: 100%;
+        height: 1.5em;
+        border: 0.2em solid rgba(234, 80, 69, 0.3);
+    }
+    100% {
+        height: auto;
+        background: rgba(235, 147, 141, 0.9);
+        width: 100%;
+        border-radius: 0;
+        border: 0.2em solid rgba(234, 80, 69, 0.3);
+    }
+}
+
+@keyframes menu_close {
+    0% {
+        height: 1.5em;
+        background: rgba(235, 147, 141 0.9);
+        width: 100%;
+        border: 0.2em solid rgba(234, 80, 69, 0.4);
+    }
+    50% {
+        background: rgba(235, 147, 141, 0.7);
+        border: 0.2em solid rgba(234, 80, 69, 0.4);
+    }
+    100% {
+        height: 1.5em;
+        background: rgba(235, 147, 141, 0.1);
+        width: 5em;
+        border: 0.2em solid rgba(234, 80, 69, 0);
+    }
+}
+
+/* *****************************
+******** media queries *********
+********* Final touches ********
+***************************** */
+
+@media screen and (max-width:500px) {
+    #site_header {
+        padding: 5em 0 0 0;
+        font-size: 0.5em;
+    }
+    /* Skift tim 0.5em i font størrelse på første h1, så der er plads til hele overskriften. */
+    article {
+        width: 98%;
+    }
+    /* udnyt pladsen i siderne bedre */
+}
+
+/* *****************************
+******** Placeholders :-D ******
+********************************
+***************************** */
+
+.placeholder {
+    border: 1px solid rgba(235, 235, 235, 0.3);
+    border-radius: 0.2em;
+    position: relative;
+    min-height: 5em;
+    width: 90%;
+    margin: 1em auto;
+    background: rgba(255, 255, 255, 0.1)
+}
+
+.placeholder::after {
+    content: "PLACEHOLDER";
+    margin: 1em 0 0;
+    position: absolute;
+    bottom: 0.2em;
+    right: 0.2em;
+    font-style: italic;
+    font-size: 0.8em;
+}
