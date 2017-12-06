@@ -5,7 +5,7 @@
     Dette er nødvendigt fordi der er forskel på margin og padding i browsere.
     Nogle browsere bruger padding på bestemte elementer, imens andre bruger margin.
     Vi løser problemet ved at "resette" begge egenskaber på alle elementer.
-*/
+*/ 
     margin: 0;
     padding: 0;
 }
@@ -124,8 +124,7 @@ section {
     top: 0px;
     width: 5em;
     margin: 0 auto;
-    border: 0.2em solid rgba(234, 80, 69, 0);
-    box-sizing: border-box;
+    border:0.2em solid rgba(234, 80, 69, 0);box-sizing:border-box;
     border-bottom-left-radius: 0.2em;
     border-bottom-right-radius: 0.2em;
     transition: background 1s ease-in-out 0.2s;
@@ -274,6 +273,15 @@ blockquote p {
     font-size: 2em;
 }
 
+/* Link til dokumentationssite, trello-board. Osv... */
+
+.link_ud::before {
+    content: "Link: ";
+    font-style: italic;
+}
+
+/* Tilføjes til alle eksterne links */
+
 article video {
     max-width: 1920px;
     display: block;
@@ -349,14 +357,14 @@ section {
         border: 0.2em solid rgba(234, 80, 69, 0.4);
     }
     50% {
-        background: rgba(235, 147, 141, 0.7);
-        border: 0.2em solid rgba(234, 80, 69, 0.4);
+         background: rgba(235, 147, 141, 0.7);
+         border: 0.2em solid rgba(234, 80, 69, 0.4);
     }
     100% {
         height: 1.5em;
         background: rgba(235, 147, 141, 0.1);
         width: 5em;
-        border: 0.2em solid rgba(234, 80, 69, 0);
+        border:0.2em solid rgba(234, 80, 69, 0);
     }
 }
 
