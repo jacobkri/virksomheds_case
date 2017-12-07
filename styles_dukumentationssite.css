@@ -1,12 +1,4 @@
-#ide1,
-#ide2,
-#ide3,
-.article_sections_divED {
-    border-radius: 0.3em;
-    border: 0.2em solid rgba(214, 90, 89, 0.5);
-    background: rgb(234, 80, 69);
-    margin: 1em 0;
-}
+
 
 /* */
 
@@ -170,12 +162,6 @@ table {
 table td {
     border: 1px solid rgb(230, 230, 230);
     padding: 0.2em;
-}
-
-.indent {
-    text-indent: 3em;
-    font-style: italic;
-    color: rgba(255, 255, 255, 0.5);
 }
 
 article img {
