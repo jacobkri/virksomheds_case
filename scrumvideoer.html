@@ -18,11 +18,12 @@
         <nav id="burger_menu" onclick="void(0)">☰
             <ol>
                 <li class="to_da_top"><a href="dokumentationssite.html" title="Til dokumentationssitet :-D">⮈</a> <a href="#site_header" title="Til toppen :-D">⮉</a></li>
-                <li><a href="#scrum1">Scrum 1</a></li>
-                <li><a href="#scrum2">Scrum 2</a></li>
-                <li><a href="#scrum3">Scrum 3</a></li>
-                <li><a href="#scrum4">Scrum 4</a></li>
-                <li><a href="#scrum5">Scrum 5</a></li>
+                <li><a href="#indledning" onClick="showElement('indledning')">Indledning</a></li>
+                <li><a href="#scrum1" onClick="showElement('scrum1')">Scrum 1</a></li>
+                <li><a href="#scrum2" onClick="showElement('scrum2')">Scrum 2</a></li>
+                <li><a href="#scrum3" onClick="showElement('scrum3')">Scrum 3</a></li>
+                <li><a href="#scrum4" onClick="showElement('scrum4')">Scrum 4</a></li>
+                <li><a href="#scrum5" onClick="showElement('scrum5')">Scrum 5</a></li>
                  <!-- 
                 <li><a href="#scrum6">Scrum 6</a></li>
                 <li><a href="#scrum7">Scrum 7</a></li> -->
@@ -31,9 +32,10 @@
         </nav>
     </div>
     <article>
-     <header>
+     <header id="indledning">
        <h1>Indledning</h1>
        <p>I vores daglige scrum-videor gennemgår vi, hvad vi fik lavet dagen forinden, og vi fremsætter vores mål for, hvad vi gerne vil nå i løbet af dagen.</p>
+       <p>Brug menuen i toppen til at vise de enkelte videoer.</p>
      </header>
      <div class="article_sections_divED">
       <section id="scrum1">
@@ -75,6 +77,9 @@
     </article>
     
     <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
-    <script src="vores_smukke_burger_menu.js" type="text/javascript"></script> <!-- Værsgo og spis, osv. -->
+    <script src="navigation.js" type="text/javascript"></script> <!-- Script til navigation på siden -->
+    <script type="text/javascript">
+    $("section").hide(); // Hide sections when JS is enabled
+    </script>
 </body>
 </html>
