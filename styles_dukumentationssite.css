@@ -19,10 +19,10 @@
 }
 
 .credits a {
-    font-size: 0.9em;
-    font-style: italic;
-    text-decoration: underline;
+    font-size: 1.8em;
+    padding:0 0.5em;
 }
+.credits a:hover {filter:grayscale(100%);}
 
 /* !important overskriver tidligere angivelse i styles.css */
 
