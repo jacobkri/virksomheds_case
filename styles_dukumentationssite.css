@@ -22,7 +22,7 @@
     font-size: 1.8em;
     padding:0 0.5em;
 }
-.credits a:hover {filter:grayscale(100%);}
+.credits a:hover {filter:grayscale(100%);font-style:italic;}
 
 /* !important overskriver tidligere angivelse i styles.css */
 
