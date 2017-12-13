@@ -1,165 +1,37 @@
 
+/* Who reads these comments anyway? Go watch Netflix instead or something... */
 
-/* */
-
-.credits ul {
-    list-style-type: none;
-    display: flex;
-    flex-basis: 300px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.credits li {
-    overflow: hidden;
-    word-break: break-all;
-    max-width: 16%;
-    min-height: 1.5em;
-    min-width: 180px;
-}
-
-.credits a {
-    font-size: 1.8em;
-    padding:0 0.5em;
-}
+.credits ul {list-style-type:none;display:flex;flex-basis:300px;flex-wrap:wrap;justify-content:center;}
+.credits li {overflow:hidden;word-break:break-all;max-width:16%;min-height:1.5em;min-width:180px;}
+.credits a {font-size:1.8em;padding:0 0.5em;}
 .credits a:hover {filter:grayscale(100%);font-style:italic;}
+.credits img {width:50%;margin:1em;border-radius:50%;}
+#experience_maps ol {list-style-type:none;display:flex;flex-basis:400px;flex-wrap:wrap;justify-content:space-between;}
+#experience_maps li {width:33%;}
+#experience_maps img {width:100%;border-radius:0.2em;}
 
-/* !important overskriver tidligere angivelse i styles.css */
+#persona p {margin:0;}
+#persona section p {margin:0 0 1em;}
+#persona section {padding:0;}
+#persona section h1 {font-size:1.1em;}
+#persona #persona_container {display:flex;flex-wrap:wrap;}
+#persona #persona_info {margin:1em;}
+#persona .personaimg {width:20vw;height:20vw;background-size:100%;margin:1em 0 1em 0;background-image:url(images/jonathan.jpg);}
+#persona_info ul {list-style-type:disc;margin:1em 0 0 2em;}
+#persona_info b {text-transform:uppercase;}
 
-.credits img {
-    width: 50%;
-    margin: 1em;
-    border-radius: 50%;
-}
+#interview ul {list-style-type:disc;margin:1em 0 0 2em;text-transform:uppercase;}
+#interview ul li {font-weight:bold;}
+#interview ul li li {font-weight:normal;text-transform:none;}
+#interview ul ul {list-style-type:circle;margin:0.5em 0 1em 1em;}
 
-#experience_maps ol {
-    list-style-type: none;
-    display: flex;
-    flex-basis: 400px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+article ul {list-style-type:disc;margin:1em 0 0 2em;}
+article ul li {list-style-type:circle;}
+article ul li li {list-style-type:circle;}
+article ul li ul {margin:0.5em 0 1em 1em;}
 
-#experience_maps li {
-    width: 33%;
-}
+.table_wrap {width:97%;margin:0 auto;overflow-x:scroll;} /* Used to enable horizontal scrolling in benchmarking table */
+table {empty-cells:hide;width:100%;font-size:0.8em} /* Only used on benchmarking table */
+table td {border: 1px solid rgb(230, 230, 230);padding: 0.2em;}
 
-article header li div {
-    text-align: center;
-}
-
-#experience_maps img {
-    width: 100%;
-    border-radius: 0.2em;
-}
-
-#persona p {
-    margin: 0;
-}
-
-#persona section p {
-    margin: 0 0 1em;
-}
-
-#persona section {
-    padding: 0;
-}
-
-#persona section h1 {
-    font-size: 1.1em;
-}
-
-#persona #persona_container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#persona #persona_info {
-    margin: 1em;
-}
-
-#persona .personaimg {
-    width: 20vw;
-    height: 20vw;
-    background-size: 100%;
-    margin: 1em 0 1em 0;
-    background-image: url(images/jonathan.jpg);
-}
-
-#persona_info ul {
-    list-style-type: disc;
-    margin: 1em 0 0 2em;
-}
-
-#persona_info b {
-    text-transform: uppercase;
-}
-
-
-#interview ul {
-    list-style-type: disc;
-    margin: 1em 0 0 2em;
-    text-transform: uppercase;
-}
-
-#interview ul li {
-    font-weight: bold;
-}
-
-#interview ul li li {
-    font-weight: normal;
-    text-transform: none;
-}
-
-#interview ul ul {
-    list-style-type: circle;
-    margin: 0.5em 0 1em 1em;
-}
-
-
-
-article ul {
-    list-style-type: disc;
-    margin: 1em 0 0 2em;
-}
-
-article ul li {
-    list-style-type: circle;
-
-}
-
-article ul li li {
-    list-style-type: circle;
-
-}
-
-article ul li ul {
-    margin: 0.5em 0 1em 1em;
-}
-
-
-#koncept_praktik ol {
-    margin: 1em 0 1em 2em;
-    list-style-type: decimal;
-}
-
-.table_wrap {
-    width: 97%;
-    margin: 0 auto;
-    overflow-x: scroll;
-}
-
-table {
-    empty-cells: hide;
-    width: 100%;
-    font-size: 0.8em
-}
-
-table td {
-    border: 1px solid rgb(230, 230, 230);
-    padding: 0.2em;
-}
-
-article img {
-    width: 100%;
-}
+article img {width:100%;} /* Make images take up 100% width in parent */
