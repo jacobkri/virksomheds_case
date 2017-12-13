@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="utf-8">
+   <!--  <meta charset="utf-8">
+    Ikke nødvendigt når serveren sender charset i header delen
+   -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex,nofollow">
     <title>Scrum video-dagbog</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <!-- Denne her kommentar er totalt ligegyldig -->
 <body>
-    <header id="site_header">
+    <header id="site_header"><div class="pos_wrap"><!-- needed for centering .bg  --><div class="bg"></div></div>
       <h1>Scrum video-dagbog</h1>
-      <p>Drik noget kaffe og spis noget slik. Fordi <strong>nu</strong> skal <strong>du</strong> se <em>film</em>!!!.</p> <!-- lol!? -->
+      <p>Drik noget kaffe og spis noget slik. Fordi <strong>nu</strong> skal <strong>du</strong> se <em>film</em>!!!</p> <!-- lol!? -->
     </header>
     <div id="burger_menu_wrap">
         <nav id="burger_menu" onclick="void(0)">☰
@@ -75,7 +77,9 @@
       </section>
      </div>
     </article>
-    
+    <footer id="site_footer">
+      <p>Siden er udarbejdet i forbindelse med et skoleprojekt af <i>1. Semester</i> <b>Multimediedesigner</b> studerende på <a href="http://kea.dk/">Københavns Erhvervsakademi (KEA)</a></p>
+    </footer>
     <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="navigation.js" type="text/javascript"></script> <!-- Script til navigation på siden -->
     <script type="text/javascript">

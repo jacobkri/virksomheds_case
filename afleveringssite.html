@@ -1,43 +1,50 @@
 <!doctype html>
 <html lang="da">
- <head>
-    <meta charset="utf-8">
+  <head>
+   <!--  <meta charset="utf-8">
+    Ikke nødvendigt når serveren sender charset i header delen
+   -->
     <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afleveringssite</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles_afleveringssite.css">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
 
-<body class="fadein">
-    <header id="site_header">
-        <h1>Afleveringssite</h1>
+  <body class="fadein">
+    <header id="site_header"><div class="pos_wrap"><!-- needed for centering .bg  --><div class="bg"></div></div>
+      <h1>Afleveringssite</h1>
     </header>
     <div id="burger_menu_wrap">
-        <nav id="burger_menu" onclick="void(0)">☰
-            <ol>
-                <li><a href="#fordele_benefits">Fordele og Benefits</a></li>
-                <li><a href="#link_til_appen">App</a></li>
-                <li><a href="#link_til_pitch">Pitch</a></li>
-            </ol>
-        </nav>
+      <nav id="burger_menu" onclick="void(0)">☰
+        <ol>
+         <li><a href="#fordele_benefits">Fordele og Benefits</a></li>
+         <li><a href="#link_til_appen">App</a></li>
+         <li><a href="#link_til_pitch">Pitch</a></li>
+        </ol>
+      </nav>
     </div>
     <article>
-     <h1>Præsentation</h1>
-     <p>På denne side har vi indsat links til vores <i>App</i>, <i>Procesdokumentation</i>, <i>Pitch</i> og <i>Scrumvideoer</i>.</p>
+      <h1>Præsentation</h1>
+      <p>På denne side har vi indsat links til vores <i>App</i>, <i>Procesdokumentation</i>, <i>Pitch</i> og <i>Scrumvideoer</i>.</p>
 
-       <section class="visual_group vg_f">
-         <h1>Dokumentation af vores proces</h1>
-         <p class="link_ud"><a href="dokumentationssite.html">Dokumentationssite</a></p>
-       </section>
-       <section class="visual_group vg_e">
-         <h1>Scrum video dagbog</h1>
-         <p class="link_ud"><a href="scrumvideoer.html">Scrumvideoer</a></p>
-       </section>
-      </article>
-
+      <section class="visual_group vg_f">
+        <h1>Dokumentation af vores proces</h1>
+        <p class="link_ud"><a href="dokumentationssite.html">Dokumentationssite</a></p>
+      </section>
+      
+      <section class="visual_group vg_e">
+        <h1>Scrum video dagbog</h1>
+        <p class="link_ud"><a href="scrumvideoer.html">Scrumvideoer</a></p>
+      </section>
+      
+    </article>
+    <footer id="site_footer">
+      <p>Siden er udarbejdet i forbindelse med et skoleprojekt af <i>1. Semester</i> <b>Multimediedesigner</b> studerende på <a href="http://kea.dk/">Københavns Erhvervsakademi (KEA)</a></p>
+    </footer>
     <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="navigation.js" type="text/javascript"></script> <!-- Script til navigation på siden -->
-</body>
+  </body>
 
 </html>
