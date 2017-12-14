@@ -19,24 +19,48 @@
     <div id="burger_menu_wrap">
       <nav id="burger_menu" onclick="void(0)">☰
         <ol>
-         <li><a href="#fordele_benefits">Fordele og Benefits</a></li>
-         <li><a href="#link_til_appen">App</a></li>
-         <li><a href="#link_til_pitch">Pitch</a></li>
+         <li><a href="#indledning" onClick="showElement('indledning')">Indledning</a></li>
+         <!-- <li><a href="#fordele_benefits">Fordele og Benefits (mangler)</a></li> -->
+         <li><a href="#link_til_appen" onClick="showElement('link_til_appen')">App</a></li>
+         <li><a href="#pitch" onClick="showElement('pitch')">Pitch</a></li>
+         <li><a href="dokumentationssite.html">Dokumentationssite</a></li>
+         <li><a href="scrumvideoer.html">Scrum Video Dagbog</a></li>
         </ol>
       </nav>
     </div>
     <article>
+    <header id="indledning">
       <h1>Præsentation</h1>
       <p>På denne side har vi indsat links til vores <i>App</i>, <i>Procesdokumentation</i>, <i>Pitch</i> og <i>Scrumvideoer</i>.</p>
-
+      <p style="text-indent:1em;"><strong>OPS:</strong> Brug drop-down menuen i toppen til at vise de forskellige sektioner.</p>
+    </header>
       <section class="visual_group vg_f">
         <h1>Dokumentation af vores proces</h1>
-        <p class="link_ud"><a href="dokumentationssite.html">Dokumentationssite</a></p>
+        <p><a href="dokumentationssite.html">Dokumentationssite</a></p>
       </section>
       
       <section class="visual_group vg_e">
         <h1>Scrum video dagbog</h1>
-        <p class="link_ud"><a href="scrumvideoer.html">Scrumvideoer</a></p>
+        <p><a href="scrumvideoer.html">Scrumvideoer</a></p>
+      </section>
+      
+      <section id="link_til_appen">
+       <h1>App Prototype</h1>
+       <iframe width="377" height="667" src="https://xd.adobe.com/embed/5b12fc4c-20f1-47b1-bab1-c5d9703a73af" frameborder="0" allowfullscreen></iframe>
+       <p><a href="https://xd.adobe.com/view/5b12fc4c-20f1-47b1-bab1-c5d9703a73af">App Prototype</a></p>
+      </section>
+      
+      <section id="pitch">
+       <h1>Pitch</h1>
+       <ol>
+        <li>Spændende intro, der hyper</li>
+        <li>Kort præsentation af app’en, formål og brugssituation</li>
+        <li>Nævn fordele</li>
+        <li>Hvad kan den bidrage til Republikken</li>
+        <li>Hvilken effekt har det hos brugerne</li>
+        <li>Hvad er det fantastiske ved republikkens helte</li>
+        <li>Cost benefit analyse</li>
+       </ol>
       </section>
       
     </article>
@@ -45,6 +69,9 @@
     </footer>
     <script src="jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="navigation.js" type="text/javascript"></script> <!-- Script til navigation på siden -->
+    <script type="text/javascript">
+    $("section").hide(); // Hide sections when JS is enabled
+    </script>
   </body>
 
 </html>

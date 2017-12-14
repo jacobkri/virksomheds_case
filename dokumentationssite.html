@@ -24,6 +24,7 @@
          <li><a href="#scrum_video" onClick="showElement('scrum_video')">Scrum videoer</a></li>
          <li><a href="#burndownchart" onClick="showElement('burndownchart')">Burn-down chart</a></li>
          <li><a href="#experience_maps" onClick="showElement('experience_maps')">Experience Map</a></li>
+         <li><a href="#persona" onClick="showElement('persona')">Persona</a></li>
          <li><a href="#interview" onClick="showElement('interview')">Interview</a></li>
          <li><a href="#ide1" onClick="showElement('ide1')">Idé 1</a></li>
          <li><a href="#ide2" onClick="showElement('ide2')">Idé 2</a></li>
@@ -432,6 +433,156 @@
             </section>
         </section>
         <!--  Ide 2 slut -->
+        
+        <section id="ide3">
+          <header>
+          <h1>Idé 3 – Republikkens Helte</h1>
+          <nav>
+            <ol>
+              <li><a href="#skitse_ide3">Skitse</a></li>
+              <li><a href="#storyboard_ide3">Storyboard</a></li>
+              <li><a href="#test_video_ide3">Test Video</a></li>
+              <li><a href="#ide_grundlag_ide3">Idé Grundlag</a></li>
+              <li><a href="#konceptvalidering_ide3">Konceptvalidering</a></li>
+              <!--   <li><a href=""></a></li>   Copy paste :-D  -->
+            </ol>
+          </nav>
+          </header>
+          
+          <section id="skitse_ide3">
+            <h1>skitse</h1>
+            <p>Indledende skitse over idéen.</p>
+            <img src="img/ide1/skitse-tjek-ind.jpg" alt="Skitse til idé 1 med Check Ind appen">
+          </section>
+          <section id="storyboard_ide3">
+           <h1>Storyboard</h1>
+           <p>Vores storyboard giver et bud på en brugssituation for vores app.</p>
+           <img src="img/ide3/skitse-helte.jpg" alt="Storyboard over idé 3, Republikkens Helte">
+          </section>
+          
+          <section id="test_video_ide3">
+            <h1>Test af Republikkens Helte (Idé 3)</h1>
+            <p>Beklager at videoen er på siden. Du bliver nok nødt til at sætte din skærm på højkant :-D</p>
+            <video controls preload="metadata"> <!-- Indlæs kun metadata, indtil brugeren selv klikker på play  -->
+            <source src="test-republikkens-helte.mp4" type="video/mp4">
+              Din spasser browser understøtter ikke HTML video elementet. Det må du se at få ordnet.
+            </video>
+            <section>
+             <h1>Dataindsamling</h1>
+             <ol>
+              <li><b>00.30:</b> “Der er jo en blanding af classes og races”</li>
+             </ol> 
+             <p><b>Indsigt:</b> De tre valgmuligheder strider mod konventionelle rpg-normer i og med at to af mulighederne er classes og Goblin er en race.</p>
+             <p><b>Løsning:</b> Udbyt Goblin valgmuligheden med en anden klasse som f.eks. alkymist eller skjald.</p>
+              
+             <ol>
+              <li><b>01.18:</b> “Kan jeg trykke på ham?”</li>
+             </ol>
+             <p><b>Indsigt:</b> Interfacen meddeler ikke tydeligt, hvilke muligheder brugeren nu har. Alternativt er formålet med at finde pågældende person IRL ikke blevet forklaret tydeligt nok forud for testen.</p>
+             <p><b>Løsning:</b> Redesign af interfacen, der tydeligere viser, hvordan brugeren ser ud, eller med opfordringer til næste skridt. Eksempelvis: ‘Kig dig omkring på kroen og se om du kan finde Steve.’</p>
+             <ol>
+              <li><b>01.43:</b> “Jeg ved ikke hvordan steve ser ud”</li>
+             </ol> 
+             <p><b>Indsigt:</b> Prototypen har ikke et billede af brugeren, kun en profilbillede placeholder.</p>
+             <p><b>Løsning:</b> Profilbilledet kan gøres større, eller der kan tilføjes en expand funktion, så billedet kan gøres større.</p>
+             <ol>
+              <li><b>02.04:</b> Lang pause.</li> 
+             </ol> 
+             <p><b>Indsigt:</b> Testpersonen stirrer på prototypen i syv sekunder før han trykker på ‘post quest’</p>
+             <p><b>Losning:</b> Måske er der ikke behov for en løsning, men der kan evt. optimeres ved at rykke post quest knappen øverst på siden.</p>
+             <section>
+               <h1>Konklusion på test</h1>
+               <p>Koblingen mellem det digitale og face to face interaktionen fremgår ikke tydeligt i denne test af app’en. Derudover går visse features også tabt, som stavekontrollen eller point uddeling i to af de testede scenarier. Løsninger til disse er at der skal laves rettelser i interfacen og evt. en tilføjelse af en startguide og/eller en ordbog, hvor man kan slå spiltermer op. Derudover kan der tilføjes en navnegenerator, således at de spillere, der har lyst kan leve sig mere ind i spillet.</p>
+             </section>
+            </section>
+          </section>
+          <section id="ide_grundlag_ide3">
+           <h1>Ide Grundlag</h1>
+           <ul>
+            <li>(Aktivitet)
+             <ul>
+              <li>(Features)</li>
+             </ul>
+            </li>
+            <li>Logind
+             <ul>
+              <li>Brugernavn</li>
+              <li>Password</li>
+              <li>Logind knap</li>
+             </ul>
+            </li>
+            <li>Vælg din helt
+             <ul>
+              <li>Tre klasser med expand funktion til beskrivelse</li>
+              <li>Vælg knap</li>
+             </ul>
+            </li>
+            <li>Hjem
+             <ul>
+              <li>Profilbillede og navn i toppen med progressbar, der viser hvor mange xp man er fra næste level</li>
+              <li>Min profil</li>
+              <li>quests (forum)</li>
+              <li>Helte (brugerliste)</li>
+             </ul>
+            </li>
+            <li>Quests
+             <ul>
+              <li>Egen quest pinned i toppen</li>
+              <li>Quests (expand)
+               <ul>
+                <li>Accepter quest</li>
+                <li>Liste over folk der har accepteret</li>
+                <li>Afslut quest (kun questgiver)</li>
+               </ul>
+              </li>
+             </ul>
+            </li>
+            <li>Brugerliste 
+             <ul>
+              <li>Medlemmer (onlineaftr øverst)</li>
+             </ul>
+            </li>
+            <li>Min profil
+             <ul>
+              <li>Beskrivelse</li> 
+              <li>Avatar</li>
+              <li>Assisteret i quest-knap</li>
+             </ul>
+            </li>
+           </ul>
+          </section>
+          <section id="konceptvalidering_ide3">
+           <h1>Konceptvalidering</h1>
+           <p>Her vil vi forsøge at vurdere, hvor vidt vores app vil være realiserbar. Dvs. Vil man kunne udvikle appen indenfor, blandt andet, budget, og en overskuelig tidsremme.</p>
+           <section>
+            <h1>Målgruppe</h1>
+            <p>Målgruppen er de selvstændige, der har en plads på Republikken.</p>
+            <p>Ikke umiddelbart. App’en indeholder et vist element af analogt samspil. Derfor kan app’en som udgangspunkt ikke skaleres op. Der er dog mulighed for at udvide app’en, så spillet kan spilles på andre kontorfællesskaber.</p>
+           </section>
+           <section>
+            <h1>Forstår målgruppen vores løsning?</h1>
+            <p>Som udgangspunkt ja. Testpersonen er dog bekendt med rpg’er og der er derfor en mulighed for at målgruppen ikke forstår hensigten. Der skal, i tilfælde af at app’en udvikles, tilføjes en introduktion af formål, spilleregler og pointsystem.</p>
+           </section>
+           <section>
+            <h1>Hvilken værdi vil løsningen give virksomheden?</h1>
+            <p>App’en skal gerne have den effekt at det motivere ‘Indbyggerne’ på Republikken til at spille og være mere tilbøjelige til at søge råd og vejledning hos hinanden. Dertil er konceptet for app’en meget atypisk for en virksomheds-app og skulle gerne agere som et skørt indspark i en ellers meget forretnings præget hverdag. Derudover kan app’en have den effekt at den er en god icebreaker i en samtale.</p>
+           </section>
+           <section>
+            <h1>Hvilken værdi giver den målgruppen?</h1>
+            <p>App’en skal være sjov at bruge. Det er måske ikke alle der vil tage den til sig til at starte med, men hvis app’en bliver hypet for nye ‘indbyggere’ vil brugen formentlig stige. Derudover kan man via app’en få et indtryk af hvem der er gode/interesserede i at hjælpe i form af hvor højt et level de er på.</p>
+           </section>
+           <section>
+            <h1>Er appen realiserbar?</h1>
+            <p>Udviklingen kan let lade sig gøre. Grundlæggende er det en profildatabase og et forum med et fantasy skin på. Tanken er at republikkens profiler kan linkes til app’en via republikkens interne login således at brugerne ikke skal bruge for lang tid på oprettelse af profil. derudover er det meste af app’ens indhold skabt af brugerne selv.</p>
+           </section>
+           <section>
+            <h1>Har andre allerede realiseret en tilsvarende løsning? </h1>
+            <p>Der er ikke nogle app’s tilknyttet en specifik virksomhed, der indeholder spilelementer på samme måde. Der er apps til andre kontorfællesskaber som Regus og Wework, som indeholder rent praktiske features, som Republikken Helte evt. kunne kopiere således at app’en udvikler sig til mere end bare spillet.</p>
+           </section>
+          </section>
+          
+        </section>
+        <!--  Ide 3 slut -->
 
         <section id="valg_af_ide">
           <header>
@@ -534,8 +685,37 @@
 
          <section id="argumentation" class="placeholder">
            <h1>Argumentation</h1>
+           <p>Vi udførete en benchmarktest, for at vælge hvilken idé vi gik videre med. Her var det <b>Republikkens Helte</b> som vandt testen med en score på <b>8,8</b>.</p>
          </section>
        </section>
+       
+       <!-- Persona -->
+       <section id="persona">
+                <header>
+                    <h1>Persona</h1>
+                </header>
+
+                <div id="persona_container">
+                    <div class="personaimg"><img src="credits/unknown.jpg" alt="Billedet til persona viser en standard, ukendt person." title="Anonymous (?)"></div>
+
+                    <div id="persona_info">
+                        <ul>
+                            <li><b>Navn:</b> Rikke</li>
+                            <li><b>Alder:</b> 32 år</li>
+                            <li><b>Køn:</b> Kvinde</li>
+                            <li><b>Bopæl:</b> Vesterbro i en andelslejlighed</li>
+                            <li><b>Beskæftigelse:</b> Freelancer, selvstændig designer og programmør</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <section>
+                    <h3>Beskrivelse:</h3>
+                    <p>Rikke har gået igennem mange uddannelser og klaret det med perfekte karaktere, i næsten alt. Efter hendes bachelor i webudvikling, valgte hun at stoppe sit uddannelses ræs, ved at starte sin egen virksomhed, og blive selvstændig. Hun har altid arbejdet meget gruppeorienteret og haft studiejobs i store virksomheder, så det at blive selvstændig og skulle stå på egne ben er en kæmpe omvæltning i hendes liv. </p>
+                    <p>Rikke  er en selvstændig karrierekvinde. Altid brudepige, aldrig brud. Men hendes tilværelse ændrer sig da hun skal udføre et job for den arrogante, men charmerende chris. Kan Rikke holde sig professionel, eller sparker kærligheden benene væk under hende.</p>
+                </section>
+            </section>
+            <!-- Persona slut -->
 
     </article>
     <footer id="site_footer">
