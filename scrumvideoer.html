@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
+  <head>
    <!--  <meta charset="utf-8">
     Ikke nødvendigt når serveren sender charset i header delen
    -->
@@ -9,15 +9,15 @@
     <title>Scrum video-dagbog</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-</head>
+  </head>
 <!-- Denne her kommentar er totalt ligegyldig -->
-<body>
+  <body>
     <header id="site_header"><div class="pos_wrap"><!-- needed for centering .bg  --><div class="bg"></div></div>
       <h1>Scrum video-dagbog</h1>
       <p>Drik noget kaffe og spis noget slik, fordi <strong>nu</strong> skal <strong>du</strong> se <em>film</em>!!!</p> <!-- lol!? -->
     </header>
     <div id="burger_menu_wrap">
-        <nav id="burger_menu" onclick="void(0)">☰
+        <nav id="burger_menu" onclick="void(0)"><span onClick="closeMenu()">☰</span>
             <ol>
                 <li><a href="#indledning" onClick="showElement('indledning')">Indledning</a></li>
                 <li><a href="#scrum1" onClick="showElement('scrum1')">Scrum 1</a></li>
@@ -26,6 +26,8 @@
                 <li><a href="#scrum4" onClick="showElement('scrum4')">Scrum 4</a></li>
                 <li><a href="#scrum5" onClick="showElement('scrum5')">Scrum 5</a></li>
                 <li><a href="#scrum7" onClick="showElement('scrum7')">Scrum 7</a></li>
+                <li><a href="dokumentationssite.html">Dokumentationssite (link)</a></li>
+                <li><a href="afleveringssite.html">Afleveringssite (link)</a></li>
                  <!-- 
                 <li><a href="#scrum6">Scrum 6</a></li>
                  -->
@@ -92,5 +94,5 @@
     <script type="text/javascript">
     $("section").hide(); // Hide sections when JS is enabled
     </script>
-</body>
+  </body>
 </html>

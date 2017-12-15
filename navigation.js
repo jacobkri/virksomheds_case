@@ -1,12 +1,23 @@
 // **********************************************
 // *************** Værsgo og spis! **************
 // **********************************************
+var menu_is_open = 'no'; // Tjek om menuen er åben. (Hvis der trykkes igen skal menuen lukkes)
 $("#burger_menu").mouseover(function() {
+  menu_is_open = 'yes';
   $("#burger_menu").removeClass("menu_close"); // We need to remove menu_close before adding it again, obviously. Strangely enough, it also seem to work without.
 });
 $("#burger_menu").mouseout(function() {
   $("#burger_menu").addClass("menu_close");
+  menu_is_open = 'no';
 });
+function closeMenu() {
+	// Denne funktion er tiltænkt touch enheder, da de har problemer med :hover og focus
+	// Funktionen er PT utestet, men skulle i teorien fungere efter hensigten.
+	if (menu_is_open = 'yes') {
+	  $("#burger_menu").addClass("menu_close");
+	  menu_is_open = 'no';
+	} 
+}
 // **********************************************
 // ***** KODE TIL AT VISE/SKJULE SEKTIONER ******
 // **********************************************
